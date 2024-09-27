@@ -111,7 +111,7 @@ console.log("bigInt",typeof(bigInt));
 console.log("bool3",typeof(bool3));
 console.log("sym3",typeof(sym3));
 console.log("undef",typeof(undef));
-console.log("nu11",typeof(nu11)); // ❌
+console.log("nu11",typeof(nu11)); // ❌ greška u js
 
 //converting
 
