@@ -122,22 +122,33 @@ for(let i = 0;i<s;i++)
     console.log(r);
 }
 /***********************************/
+
 
+//trougao s dolar
 
+let n = 5; // broj redova
 
+for (let i = 1; i <= n; i++) {
+  let linija = '';
 
+  // Dodaj zvezdice
+  for (let j = 1; j < i; j++) {
+    linija += '*';
+  }
 
+  // Dodaj simbol $
+  linija += '$';
 
+  // Ispiši red
+  console.log(linija);
+}
 
-
-
-
-
-
-
-
-
-
+//dvocif br 
+for (let i = 10; i <= 99; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+}
 
 
 
