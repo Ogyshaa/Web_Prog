@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+}
+.clock{
+    display: flex;
+    align-items: center;
+}
+.time {
+    color: green;
+    font-size: medium;
+    margin-right: 5px;
+}
+
+.period{
+    color: purple;
+    font-size: medium;
+    margin-right: 5px;
+}
