@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            border-radius: 50%; /* Početno stanje - krug */
+        }
+        .square {
+            border-radius: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="shape" class="circle"></div>
+    <button onclick="promeniAtribut()">Promeni oblik</button>
+    <script>
+    function promeniAtribut() {
+    let el = document.getElementById('shape');
+    el.setAttribute('style', 'background-color: red; border: 1px solid black;');
+    el.setAttribute('class', 'square'); // Menja oblik iz kruga u kvadrat
+}
+    </script>
+</body>
+</html
