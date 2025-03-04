@@ -1,0 +1,61 @@
+--HTML--
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHATEMELE5</title>
+</head>
+<body>
+    <div id="message"></div>
+
+    <!--Otpremanje jedne datoteke-->
+
+    <input type="file" onchange="uploadenzi(this.files)">
+    <div id="poluka"></div>
+    <script src="script.js"></script>
+
+    <!--Otpremanje vise datoteka-->
+    <input type="file" multiple onchange="uploadenzi2(this.files)">
+    <div id="poluka2"></div>
+
+    <input type ='file' onchange="uploadAndReadFile(this.files)">
+    <div id="poluka3"></div>
+</body>
+</html>
+
+--js--
+
+//Citac
+let message = document.getElementById('message');
+
+if(window.FileReader){
+    message.innerText =  'Superiska';
+}
+else{
+    message.innerText='nisi zabavan :(';
+}
+//otpremnaje jedene datotke
+let poruka = document.getElementById('poluka');
+function uploadenzi(files){
+    console.log(files[0]);
+    poruka.innerText = files[0].name;
+}
+
+//vise datoteka
+let poruka2 = document.getElementById('poluka2');
+function uploadenzi2(files){
+    for(let i = 0 ;i <files.length;i++){
+        poruka2.innerHTML +=files[i].name + '<br>'
+    }
+}
+
+let poluka3=document.getElementById('poluka3');
+function uploadAndReadFile(files){
+    let fr = new FileReader(); //pravimo filereader objekat
+    fr.onload = function (e){ //ano funk koja salje podatke o dogadjaju prilikom ucitavanja
+        poluka3.innerHTML = e.target.result;
+    };
+    fr.readAsText(files[0]); //citamo podatak pomocu motad readAs, posto je txt u pitanju bice readAsText, na objektu
+}
