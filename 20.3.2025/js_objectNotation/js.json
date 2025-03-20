@@ -1,0 +1,15 @@
+{
+    "ime": "Pera",
+    "koliko si star kad ce lipces": 50,
+    "profesija": "profesionalni otpusivac kanalizacionih cev tj. vodoinstalater",
+    "podprofesija": ["Web dizajner(nema poso)","Vozac kamiona","striptizeta"],
+    "adresa": {
+        "ulica": "Djure danicica",
+        "broj": 5,
+        "ptt":11322,
+        "drzava": "skobalj",
+        "grad":"nedje veoma mracno i daleko"
+    }
+
+}
+
