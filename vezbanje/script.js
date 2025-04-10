@@ -53,7 +53,7 @@ function validateInput(value, fieldName) {
 }
 
 function validateLength(value) {
-    const isValidLength = !isNaN(value) && value > 0;
+    const isValidLength = !isNaN(value) && value > 0 && !value <90 && !value>210;
     return {
         isValid: isValidLength,
         message: isValidLength ? 'Dužina je uspešno uneta.' : 'Dužina mora biti broj veći od nule.'
@@ -62,7 +62,7 @@ function validateLength(value) {
 
 
 function validateTonazu(value) {
-    const isValidTonazu = !isNaN(value) && value > 0;
+    const isValidTonazu = !isNaN(value) && value > 0 && !value <50 && !value>300;
     return {
         isValid: isValidTonazu,
         message: isValidTonazu ? 'Tonaza je uspešno uneta.' : 'Tonaza mora biti broj veći od nule.'
