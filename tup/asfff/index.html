@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>😂</title>
+</head>
+<body>
+    <center>
+        <h2>Strana za unos podatak o ucenicima</h2>
+            <hr>
+        <input type="text" placeholder="Unesi ime i prezime ucenika" id="ime"><label id="errorI">*</label><br>
+        <input type="text" placeholder="Unesi pol: zenski/muski" id="pol"><label id="errorP">*</label><br>
+        <input type="text" placeholder="Unesi razred i odeljenje" id="raz"><label id="errorO">*</label><br>
+        <input type="text" placeholder="Unesi prosecnu ocenu ucenika(1.00-5.00)" id="pr"><label id="errorPR">*</label><br>
+            <hr>
+        <input type="button" value="Unesi me😜🤞" id="buten1" onclick="inputirajME()"> &nbsp;
+        <input type="button" value="NE unosi me" id="buten2" onclick="grafik()">
+            <hr>
+        <canvas id="c1" hidden="true" width="50%" height="50%" style="border: 5px solid rebeccapurple; background-color: aquamarine;"></canvas>
+    </center>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
