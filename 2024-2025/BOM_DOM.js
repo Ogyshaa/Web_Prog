@@ -67,3 +67,4 @@ document.getElementById("pix").innerHTML = 'Dubina piksela ekrana je ' + screen.
 
 
 
+
