@@ -122,7 +122,8 @@ for(let i = 0;i<s;i++)
     console.log(r);
 }
 /***********************************/
-
+
+
 
 //trougao s dolar
 
